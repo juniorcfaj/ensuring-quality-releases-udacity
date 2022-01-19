@@ -68,7 +68,7 @@ stages:
       inputs:
         provider: 'azurerm'
         command: 'apply'
-        commandOptions: '-auto-approve -lock=false'
+        commandOptions: '-auto-approve'
         workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/environments/test'
         environmentServiceNameAzureRM: 'azurerm-sc'
 
