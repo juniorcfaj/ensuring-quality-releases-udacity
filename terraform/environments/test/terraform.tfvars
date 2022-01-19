@@ -10,7 +10,7 @@ client_secret = "PioGZz_TsXyB7rC4i5kW9LqnbQTzhpVAMo"
 tenant_id = "c79c1cbe-564b-40cf-a3a7-87b916055ccf"
 
 # Resource Group/Location
-location = "East US 2"
+location = "centralus"
 resource_group = "udacityrg"
 application_type = "udacitytest"
 
