@@ -13,7 +13,6 @@ def login (driver, user, password):
     driver.get('https://www.saucedemo.com/')
     driver.find_elements(By.CSS_SELECTOR, "input[id='user-name']").send_keys(user)
     driver.find_elements(By.CSS_SELECTOR, "input[id='password']").send_keys(password)
-    login(driver, 'standard_user', 'secret_sauce')
     driver.find_elements(By.ID, "login-button").click()
     assert 'https://www.saucedemo.com/inventory.html' in driver.current_url
     print(timestamp() +' Login successful with username '+ user + ' and password '+ password)
