@@ -11,9 +11,9 @@ def timestamp():
 def login (driver, user, password):
     #Login
     driver.get('https://www.saucedemo.com/')
-    driver.find_elements(By.CSS_SELECTOR, "input[id='user-name']").send_keys(user)
-    driver.find_elements(By.CSS_SELECTOR, "input[id='password']").send_keys(password)
-    driver.find_elements(By.ID, "login-button").click()
+    driver.find_element(By.CSS_SELECTOR, "input[id='user-name']").send_keys(user)
+    driver.find_element(By.CSS_SELECTOR, "input[id='password']").send_keys(password)
+    driver.find_element(By.ID, "login-button").click()
     assert 'https://www.saucedemo.com/inventory.html' in driver.current_url
     print(timestamp() +' Login successful with username '+ user + ' and password '+ password)
 
@@ -21,11 +21,11 @@ def add_cart(driver,n):
     acum = 0
     for i in range(n):
         element = "a[id='item_" + str(i) + "_title_link']"
-        driver.find_elements(By.CSS_SELECTOR, element).click()
-        driver.find_elements(By.CSS_SELECTOR, "button.btn_primary.btn_inventory").click()
-        product = driver.find_elements(By.CSS_SELECTOR, "div[class='inventory_details_name large_size']").text
+        driver.find_element(By.CSS_SELECTOR, element).click()
+        driver.find_element(By.CSS_SELECTOR, "button.btn_primary.btn_inventory").click()
+        product = driver.find_element(By.CSS_SELECTOR, "div[class='inventory_details_name large_size']").text
         print(timestamp() + " " + product + " added to shopping cart!")
-        driver.find_elements(By.CSS_SELECTOR, "button.inventory_details_back_button").click()
+        driver.find_element(By.CSS_SELECTOR, "button.inventory_details_back_button").click()
         acum +=1
     print(timestamp() +' '+ str(acum) + ' items added to cart successfully.')
 
@@ -33,11 +33,11 @@ def remove_cart(driver,n):
     acum = 0
     for i in range(n):
         element = "a[id='item_" + str(i) + "_title_link']"
-        driver.find_elements(By.CSS_SELECTOR, element).click()
-        driver.find_elements(By.CSS_SELECTOR, "button.btn_secondary.btn_inventory").click()
-        product = driver.find_elements(By.CSS_SELECTOR, "div[class='inventory_details_name large_size']").text
+        driver.find_element(By.CSS_SELECTOR, element).click()
+        driver.find_element(By.CSS_SELECTOR, "button.btn_secondary.btn_inventory").click()
+        product = driver.find_element(By.CSS_SELECTOR, "div[class='inventory_details_name large_size']").text
         print(timestamp() + " " + product + " removed from shopping cart!")
-        driver.find_elements(By.CSS_SELECTOR, "button.inventory_details_back_button").click()
+        driver.find_element(By.CSS_SELECTOR, "button.inventory_details_back_button").click()
         acum +=1
     print(timestamp() +' '+ str(acum) + ' items removed from cart successfully.')
 
@@ -47,12 +47,12 @@ if __name__ == "__main__":
     options = ChromeOptions()
     options.add_argument("--headless") 
     driver = webdriver.Chrome(options=options)
-    #driver = webdriver.Chrome()
+    driver = webdriver.Chrome()
 
     print (timestamp()+' Browser started successfully. Navigating to the demo page to login.')
 
     login(driver, 'standard_user', 'secret_sauce')
-    add_cart(driver, 6)
-    remove_cart(driver, 6)
+    add_cart(driver, 5)
+    remove_cart(driver, 5)
 
     print(timestamp() + ' Selenium Tests DONE')
