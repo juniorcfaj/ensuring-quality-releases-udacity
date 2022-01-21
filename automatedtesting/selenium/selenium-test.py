@@ -52,7 +52,7 @@ if __name__ == "__main__":
     print (timestamp()+' Browser started successfully. Navigating to the demo page to login.')
 
     login(driver, 'standard_user', 'secret_sauce')
-    add_cart(driver, 5)
-    remove_cart(driver, 5)
+    add_cart(driver, 6)
+    remove_cart(driver, 6)
 
     print(timestamp() + ' Selenium Tests DONE')
