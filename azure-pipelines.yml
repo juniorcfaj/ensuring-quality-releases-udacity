@@ -137,6 +137,8 @@ stages:
         deploy:
           steps:
           - bash: |
+              apt-get sudo -y
+              who
               sudo apt-get update -y
               sudo apt-get install python3-pip -y
               sudo apt-get install unzip -y
