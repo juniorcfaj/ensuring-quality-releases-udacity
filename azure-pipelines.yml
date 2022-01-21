@@ -163,7 +163,7 @@ stages:
         deploy:
           steps:
           - bash: |
-              chmod -R 777 /drop-selenium
+              chmod -R 777 $(Pipeline.Workspace)/drop-selenium
               cd $(Pipeline.Workspace)/drop-selenium
               unzip -o selenium-$(Build.BuildId).zip
               pwd
