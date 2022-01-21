@@ -163,10 +163,10 @@ stages:
         deploy:
           steps:
           - bash: |
+              chmod -R 777 /drop-selenium
               cd $(Pipeline.Workspace)/drop-selenium
               unzip -o selenium-$(Build.BuildId).zip
               pwd
-              chmod -R 777 ./
               mkdir -p /var/log/selenium
               chmod 777 /var/log/selenium
               python3 -u selenium-test.py 2>&1 | tee -a /var/log/selenium/selenium-test.log
