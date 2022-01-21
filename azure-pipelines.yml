@@ -166,15 +166,14 @@ stages:
               cd $(Pipeline.Workspace)/drop-selenium
               unzip -o selenium-$(Build.BuildId).zip
               
-              mkdir teste
-              sudo mkdir -p /var/log/selenium
-              sudo chmod 777 /var/log/selenium
-              python3 -u selenium-test.py 2>&1 | sudo tee -a /var/log/selenium/selenium-test.log
+              mkdir -p /var/log/selenium
+              chmod 777 /var/log/selenium
+              python3 -u selenium-test.py 2>&1 | tee -a /var/log/selenium/selenium-test.log
 
               cd $(System.DefaultWorkingDirectory)
               mkdir -p log/selenium
               
-              sudo cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log
+              cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log
             displayName: Run Selenium tests
           - task: PublishPipelineArtifact@1
             displayName: Publish Selenium logs
