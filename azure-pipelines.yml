@@ -166,17 +166,11 @@ stages:
               cd $(Pipeline.Workspace)/drop-selenium
               unzip -o selenium-$(Build.BuildId).zip
               pwd
-              mkdir var
-              cd var
-              mkdir log
-              cd log
-              mkdir selenium
+              cd /var/log/selenium
               python3 -u selenium-test.py 2>&1 | tee -a selenium-test.log
 
               cd $(System.DefaultWorkingDirectory)
-              mkdir log
               cd log
-              mkdir selenium
               
               cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log
             displayName: Run Selenium tests
