@@ -171,7 +171,7 @@ stages:
               python3 -u selenium-test.py 2>&1 | tee -a selenium-test.log
 
               cd $(System.DefaultWorkingDirectory)
-              cd log
+              cd $(Pipeline.Workspace)/drop-selenium/var/log/selenium
               
               cp /var/log/selenium/selenium-test.log log/selenium/selenium-test.log
             displayName: Run Selenium tests
