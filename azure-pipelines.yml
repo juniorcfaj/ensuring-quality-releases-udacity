@@ -171,7 +171,6 @@ stages:
               mkdir log
               cd log
               mkdir selenium
-            # mkdir /var/log/selenium
               chmod 777 /var/log/selenium
               python3 -u selenium-test.py 2>&1 | tee -a /var/log/selenium/selenium-test.log
 
