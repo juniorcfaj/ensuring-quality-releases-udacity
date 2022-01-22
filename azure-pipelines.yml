@@ -166,6 +166,7 @@ stages:
               cd $(Pipeline.Workspace)/drop-selenium
               unzip -o selenium-$(Build.BuildId).zip
               pwd
+              whoami
               cd /var/log/selenium
               python3 -u selenium-test.py 2>&1 | tee -a selenium-test.log
 

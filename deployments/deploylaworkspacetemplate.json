@@ -1,10 +1,9 @@
 {
-"$schema": "https://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+"$schema": "https://schema.management.azure.com/schemas/2022-01-22/deploymentTemplate.json#",
 "contentVersion": "1.0.0.0",
 "parameters": {
     "workspaceName": {
         "type": "String",
-        "defaultValue": "la",
         "metadata": {
           "description": "Specifies the name of the workspace."
         }
@@ -12,11 +11,9 @@
     "location": {
         "type": "String",
         "allowedValues": [
-          "eastus",
-          "westus",
-          "southcentralus"
+          "centralus"
         ],
-        "defaultValue": "southcentralus",
+        "defaultValue": "centralus",
         "metadata": {
           "description": "Specifies the location in which to create the workspace."
         }
@@ -24,13 +21,11 @@
     "sku": {
         "type": "String",
         "allowedValues": [
-          "Standalone",
-          "PerNode",
-          "PerGB2018"
+          "Free"
         ],
-        "defaultValue": "PerGB2018",
+        "defaultValue": "Free",
         "metadata": {
-        "description": "Specifies the service tier of the workspace: Standalone, PerNode, Per-GB"
+        "description": "Specifies the service tier of the workspace: Free"
     }
       }
 },
@@ -38,7 +33,7 @@
     {
         "type": "Microsoft.OperationalInsights/workspaces",
         "name": "[parameters('workspaceName')]",
-        "apiVersion": "2015-11-01-preview",
+        "apiVersion": "2022-01-22",
         "location": "[parameters('location')]",
         "properties": {
             "sku": {
