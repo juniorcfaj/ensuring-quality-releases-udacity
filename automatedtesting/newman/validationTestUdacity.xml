@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Validation Test Udacity" tests="4" time="2.599">
+  <testsuite name="Create Employee" id="7ad6d37d-be42-4d02-af6b-51802533545e" timestamp="2022-01-23T11:46:21.269Z" tests="1" failures="1" errors="1" time="0.604">
+    <system-err><![CDATA[Iteration: 0
+
+---
+testScriptError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+---
+]]></system-err>
+    <testcase name="Successful response" time="0.604" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected '&lt;!DOCTYPE html>\n&lt;html lang=&quot;en&quot;>\n    &lt;head>\n        &lt;meta charset=&quot;utf-8&quot;>\n        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>\n\n        &lt;title>Too Many Requests&lt;/title>\n\n        &lt;!-- Fonts -->\n        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;>\n        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;>\n\n        &lt;!-- Styles -->\n        &lt;style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        &lt;/style>\n    &lt;/head>\n    &lt;body>\n        &lt;div class=&quot;flex-center position-ref full-height&quot;>\n            &lt;div class=&quot;code&quot;>\n                429            &lt;/div>\n\n            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;>\n                Too Many Requests            &lt;/div>\n        &lt;/div>\n    &lt;/body>\n&lt;/html>\n' to include 'success'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Create Employee.]]>
+        <![CDATA[Test description: Successful response.]]>
+        <![CDATA[Error message: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get All Employees" id="4fcb23d5-0a2a-45ea-bfa8-23a4cc9645ea" timestamp="2022-01-23T11:46:21.269Z" tests="3" failures="3" errors="0" time="0.536">
+    <testcase name="Successful response" time="0.536" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected '&lt;!DOCTYPE html>\n&lt;html lang=&quot;en&quot;>\n    &lt;head>\n        &lt;meta charset=&quot;utf-8&quot;>\n        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>\n\n        &lt;title>Too Many Requests&lt;/title>\n\n        &lt;!-- Fonts -->\n        &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//fonts.gstatic.com&quot;>\n        &lt;link href=&quot;https://fonts.googleapis.com/css?family=Nunito&quot; rel=&quot;stylesheet&quot;>\n\n        &lt;!-- Styles -->\n        &lt;style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        &lt;/style>\n    &lt;/head>\n    &lt;body>\n        &lt;div class=&quot;flex-center position-ref full-height&quot;>\n            &lt;div class=&quot;code&quot;>\n                429            &lt;/div>\n\n            &lt;div class=&quot;message&quot; style=&quot;padding: 10px;&quot;>\n                Too Many Requests            &lt;/div>\n        &lt;/div>\n    &lt;/body>\n&lt;/html>\n' to include 'success'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Get All Employees.]]>
+        <![CDATA[Test description: Successful response.]]>
+        <![CDATA[Error message: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '<!DOCTYPE html>\n<html lang="en">\n    <head>\n        <meta charset="utf-8">\n        <meta name="viewport" content="width=device-width, initial-scale=1">\n\n        <title>Too Many Requests</title>\n\n        <!-- Fonts -->\n        <link rel="dns-prefetch" href="//fonts.gstatic.com">\n        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">\n\n        <!-- Styles -->\n        <style>\n            html, body {\n                background-color: #fff;\n                color: #636b6f;\n                font-family: \'Nunito\', sans-serif;\n                font-weight: 100;\n                height: 100vh;\n                margin: 0;\n            }\n\n            .full-height {\n                height: 100vh;\n            }\n\n            .flex-center {\n                align-items: center;\n                display: flex;\n                justify-content: center;\n            }\n\n            .position-ref {\n                position: relative;\n            }\n\n            .code {\n                border-right: 2px solid;\n                font-size: 26px;\n                padding: 0 15px 0 15px;\n                text-align: center;\n            }\n\n            .message {\n                font-size: 18px;\n                text-align: center;\n            }\n        </style>\n    </head>\n    <body>\n        <div class="flex-center position-ref full-height">\n            <div class="code">\n                429            </div>\n\n            <div class="message" style="padding: 10px;">\n                Too Many Requests            </div>\n        </div>\n    </body>\n</html>\n' to include 'success'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code is 200" time="0.536" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 429">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Get All Employees.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 429.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 429
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate schema" time="0.536" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="Unexpected token '&lt;' at 1:1&#xA;&lt;!DOCTYPE html>&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Get All Employees.]]>
+        <![CDATA[Test description: Validate schema.]]>
+        <![CDATA[Error message: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token '<' at 1:1
+<!DOCTYPE html>
+^
+   at Object.eval sandbox-script.js:3:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Update Employee" id="a111d9f0-b0f8-4aea-b72c-6828124712a6" timestamp="2022-01-23T11:46:21.269Z" tests="3" failures="2" errors="0" time="0.741">
+    <testcase name="Successful response" time="0.741" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Error Occured! Page Not found, contact rstapi2example@gmail.com&quot;}' to include 'success'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Update Employee.]]>
+        <![CDATA[Test description: Successful response.]]>
+        <![CDATA[Error message: expected '{"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}' to include 'success'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}' to include 'success'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code is 200" time="0.741" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Update Employee.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:2:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate schema" time="0.741" classname="ValidationTestUdacity"/>
+  </testsuite>
+  <testsuite name="Delete Employee" id="15102846-dbee-4d7e-98a2-6e71c024b320" timestamp="2022-01-23T11:46:21.269Z" tests="4" failures="3" errors="0" time="0.718">
+    <testcase name="Successful response" time="0.718" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected '{&quot;message&quot;:&quot;Error Occured! Page Not found, contact rstapi2example@gmail.com&quot;}' to include 'success'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Delete Employee.]]>
+        <![CDATA[Test description: Successful response.]]>
+        <![CDATA[Error message: expected '{"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}' to include 'success'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected '{"message":"Error Occured! Page Not found, contact rstapi2example@gmail.com"}' to include 'success'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status code is 200" time="0.718" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Delete Employee.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Validate schema" time="0.718" classname="ValidationTestUdacity"/>
+    <testcase name="Validate Message" time="0.718" classname="ValidationTestUdacity">
+      <failure type="AssertionFailure" message="expected 'Error Occured! Page Not found, contact rstapi2example@gmail.com' to deeply equal 'Successfully! Record has been deleted'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: ef2b4cd6-0c4c-48eb-b721-f7d39a105686.]]>
+        <![CDATA[Collection name: Validation Test Udacity.]]>
+        <![CDATA[Request name: Delete Employee.]]>
+        <![CDATA[Test description: Validate Message.]]>
+        <![CDATA[Error message: expected 'Error Occured! Page Not found, contact rstapi2example@gmail.com' to deeply equal 'Successfully! Record has been deleted'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'Error Occured! Page Not found, contact rstapi2example@gmail.com' to deeply equal 'Successfully! Record has been deleted'
+   at Object.eval sandbox-script.js:4:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

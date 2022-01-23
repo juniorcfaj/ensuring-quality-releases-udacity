@@ -311,23 +311,23 @@ To configure custom logs go to your Log Analytics Workspace -> Settings -> Custo
 We will download and use the selenium-test.log artifact that we set up earlier in the pipeline, it must have logs similar to this:
 
 ```bash
-2021-07-08 05:42:26 Browser started successfully. Navigating to the demo page to login.
-2021-07-08 05:42:27 Login successful with username standard_user and password secret_sauce
-2021-07-08 05:42:28 Sauce Labs Bike Light added to shopping cart!
-2021-07-08 05:42:28 Sauce Labs Bolt T-Shirt added to shopping cart!
-2021-07-08 05:42:28 Sauce Labs Onesie added to shopping cart!
-2021-07-08 05:42:29 Test.allTheThings() T-Shirt (Red) added to shopping cart!
-2021-07-08 05:42:29 Sauce Labs Backpack added to shopping cart!
-2021-07-08 05:42:29 Sauce Labs Fleece Jacket added to shopping cart!
-2021-07-08 05:42:29 6 items added to cart successfully.
-2021-07-08 05:42:29 Sauce Labs Bike Light removed from shopping cart!
-2021-07-08 05:42:29 Sauce Labs Bolt T-Shirt removed from shopping cart!
-2021-07-08 05:42:30 Sauce Labs Onesie removed from shopping cart!
-2021-07-08 05:42:30 Test.allTheThings() T-Shirt (Red) removed from shopping cart!
-2021-07-08 05:42:30 Sauce Labs Backpack removed from shopping cart!
-2021-07-08 05:42:30 Sauce Labs Fleece Jacket removed from shopping cart!
-2021-07-08 05:42:30 6 items removed from cart successfully.
-2021-07-08 05:42:30 Selenium Tests DONE
+2022-01-23 11:46:09 Browser started successfully. Navigating to the demo page to login.
+2022-01-23 11:46:10 Login successful with username standard_user and password secret_sauce
+2022-01-23 11:46:10 Sauce Labs Bike Light added to shopping cart!
+2022-01-23 11:46:11 Sauce Labs Bolt T-Shirt added to shopping cart!
+2022-01-23 11:46:11 Sauce Labs Onesie added to shopping cart!
+2022-01-23 11:46:11 Test.allTheThings() T-Shirt (Red) added to shopping cart!
+2022-01-23 11:46:11 Sauce Labs Backpack added to shopping cart!
+2022-01-23 11:46:11 Sauce Labs Fleece Jacket added to shopping cart!
+2022-01-23 11:46:12 6 items added to cart successfully.
+2022-01-23 11:46:12 Sauce Labs Bike Light removed from shopping cart!
+2022-01-23 11:46:12 Sauce Labs Bolt T-Shirt removed from shopping cart!
+2022-01-23 11:46:12 Sauce Labs Onesie removed from shopping cart!
+2022-01-23 11:46:12 Test.allTheThings() T-Shirt (Red) removed from shopping cart!
+2022-01-23 11:46:12 Sauce Labs Backpack removed from shopping cart!
+2022-01-23 11:46:13 Sauce Labs Fleece Jacket removed from shopping cart!
+2022-01-23 11:46:13 6 items removed from cart successfully.
+2022-01-23 11:46:13 Selenium Tests DONE
 ```
 
 In Record delimiter we will select ```New line```.
