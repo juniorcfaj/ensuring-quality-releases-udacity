@@ -29,7 +29,7 @@ resource "azurerm_linux_virtual_machine" "test" {
     #public_key = file("D:/a/_temp/id_rsa")
   }
   os_disk {
-    caching           = "ReadWrite"
+    caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
   source_image_reference {
