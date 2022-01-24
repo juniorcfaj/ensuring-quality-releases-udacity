@@ -332,7 +332,7 @@ We will download and use the selenium-test.log artifact that we set up earlier i
 
 In Record delimiter we will select ```New line```.
 
-In Collection paths we will select ```Linux``` and in Path we will put the path where the logs are located, in our case ```/home/george/azagent/_work/1/s/log/selenium/selenium-test.log```
+In Collection paths we will select ```Linux``` and in Path we will put the path where the logs are located, in our case ```/home/junior/azagent/_work/1/s/log/selenium/selenium-test.log```
 
 In Details, we will define the Custom log name as ```SeleniumTestLogs```.
 
